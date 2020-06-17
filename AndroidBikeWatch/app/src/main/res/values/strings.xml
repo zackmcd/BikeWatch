@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">BikeBuddy</string>
+    <string name="bike_connected">Bike Connected</string>
+    <string name="bike_disconnected">Bike Disconnected</string>
+    <string name="activate_alarm">Activate Alarm</string>
+    <string name="deactivate_alarm">Deactivate Alarm</string>
+    <string name="alarm_inactive">Alarm Inactive</string>
+    <string name="alarm_active">Alarm Active</string>
+    <string name="battery_life">Device Life: %1$s</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="settingsText">Settings</string>
+    <string name="set_password">Set password</string>
+    <string name="arrows">Arrows</string>
+    <string name="results_appear_here">Results Appear Here</string>
+    <string name="scan">Scan</string>
+    <string name="register_this_device">Register This Device</string>
+    <string name="config_pass">Button</string>
+    <string name="bikes">Bikes</string>
+    <string name="report_stolen">Report Stolen</string>
+</resources>

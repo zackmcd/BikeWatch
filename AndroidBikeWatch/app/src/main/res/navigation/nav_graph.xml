@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/main">
+    <fragment
+        android:id="@+id/main"
+        android:name="buddy.example.bikebuddy.Main"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_main_to_settings"
+            app:destination="@+id/settings" />
+    </fragment>
+    <fragment
+        android:id="@+id/settings"
+        android:name="buddy.example.bikebuddy.Settings"
+        android:label="fragment_settings"
+        tools:layout="@layout/fragment_settings" >
+        <action
+            android:id="@+id/action_settings_to_qr"
+            app:destination="@id/qr" />
+        <action
+            android:id="@+id/action_settings_to_listBikes"
+            app:destination="@id/listBikes" />
+        <action
+            android:id="@+id/action_settings_to_report"
+            app:destination="@id/report" />
+    </fragment>
+    <action
+        android:id="@+id/settings_to_reg"
+        app:popUpTo="@id/nav_graph"
+        app:popUpToInclusive="true" />
+    <activity
+        android:id="@+id/qr"
+        android:name="buddy.example.bikebuddy.qr"
+        android:label="activity_qr"
+        tools:layout="@layout/activity_qr" />
+    <fragment
+        android:id="@+id/listBikes"
+        android:name="buddy.example.bikebuddy.listBikes"
+        android:label="fragment_list_bikes"
+        tools:layout="@layout/fragment_list_bikes" />
+    <fragment
+        android:id="@+id/report"
+        android:name="buddy.example.bikebuddy.report"
+        android:label="fragment_report_list"
+        tools:layout="@layout/fragment_report" />
+</navigation>
